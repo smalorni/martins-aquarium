@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Tahoma, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fish-logo {
+  height: 6rem;
+  width: 6rem;
+  margin-left: 3rem;
+}
+
+/* Nav bar styles */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  background-color: rgb(66, 136, 182);
+  margin: 0;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar h1 {
+  color: rgb(3, 2, 2);
+  font-size: 2.5rem;
+  font-family: "Mali", cursive;
+  color: whitesmoke;
+  margin: 2rem;
+}
+
+.nav-links a {
+  color: whitesmoke;
+}
+
+/* Nav bar Menu */
+.menu {
+  display: flex;
+  font-size: 1rem;
+}
+
+.menu li:hover {
+  background-color: #194256;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 0.5rem 1rem;
+}
+
+/* Responsive nav bar */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2.5rem;
+  user-select: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(66, 136, 182);
+    text-align: center;
+    right: 0;
+    left: 0;
+    padding: 3rem 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: #194256;
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 0.5rem;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    margin: 1.5rem;
+  }
+}
+
+/* 3-Columns Layout */
+.column {
+  flex: 33.33%;
+  height: 200px;
+  text-align: center;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.container {
+  display: flex;
+}
+
+.quotes {
+  text-align: left;
+  line-height: 2rem;
+  margin: 1rem;
+}
+
+/* Centered image in column */
+
+.locations img {
+  display: block;
+  width: 75%;
+  margin: auto;
+}
+
+.locations {
+  text-align: left;
+}
+
+.locations_paragraph {
+  margin: 1rem;
+}
+ol {
+  list-style-position: inside;
+  margin-left: 12rem;
+}
+
+.fishList img {
+  height: 50%;
+  width: 50%;
+  margin: 2rem;
+  padding: 0.5rem;
+}
+.fish_collect {
+  background-color: rgb(179, 226, 226);
+  margin: 0;
+  padding-bottom: 5rem;
+}
+
+h3 {
+  padding: 1rem;
+  text-align: center;
+}
+
+.blogs {
+  text-align: left;
+  margin-right: 1rem;
+}
+
+.blogs img {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.salt,
+.temp {
+  margin-top: 5rem;
+}
+
+.salt_title,
+.salinity_title,
+.temp_title {
+  font-weight: bold;
+  margin: 0.3rem;
+  text-align: center;
+}
+.date {
+  text-align: center;
+}
+
+.temp li {
+  list-style-type: square;
+  list-style-position: inside;
+  margin-left: 5rem;
+}
+
+hr {
+  border: none;
+  height: 20px;
+  width: 90%;
+  height: 50px;
+  margin-top: 0;
+  border-bottom: 2px solid #9c9a99;
+  box-shadow: 0 20px 20px -20px rgb(166, 161, 161);
+  margin: -50px auto 10px;
+}
